@@ -11,11 +11,11 @@
   <message name="getAllWaresResponse">
     <part name="parameters" element="tns:getAllWaresResponse"/>
   </message>
-  <message name="decreaseNumberOfWares">
-    <part name="parameters" element="tns:decreaseNumberOfWares"/>
+  <message name="getWaresNumbers">
+    <part name="parameters" element="tns:getWaresNumbers"/>
   </message>
-  <message name="decreaseNumberOfWaresResponse">
-    <part name="parameters" element="tns:decreaseNumberOfWaresResponse"/>
+  <message name="getWaresNumbersResponse">
+    <part name="parameters" element="tns:getWaresNumbersResponse"/>
   </message>
   <message name="getNumberOfWares">
     <part name="parameters" element="tns:getNumberOfWares"/>
@@ -23,28 +23,28 @@
   <message name="getNumberOfWaresResponse">
     <part name="parameters" element="tns:getNumberOfWaresResponse"/>
   </message>
-  <message name="getWaresNumbers">
-    <part name="parameters" element="tns:getWaresNumbers"/>
+  <message name="decreaseNumberOfWares">
+    <part name="parameters" element="tns:decreaseNumberOfWares"/>
   </message>
-  <message name="getWaresNumbersResponse">
-    <part name="parameters" element="tns:getWaresNumbersResponse"/>
+  <message name="decreaseNumberOfWaresResponse">
+    <part name="parameters" element="tns:decreaseNumberOfWaresResponse"/>
   </message>
   <portType name="WareWebService">
     <operation name="getAllWares">
       <input wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getAllWaresRequest" message="tns:getAllWares"/>
       <output wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getAllWaresResponse" message="tns:getAllWaresResponse"/>
     </operation>
-    <operation name="decreaseNumberOfWares">
-      <input wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/decreaseNumberOfWaresRequest" message="tns:decreaseNumberOfWares"/>
-      <output wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/decreaseNumberOfWaresResponse" message="tns:decreaseNumberOfWaresResponse"/>
+    <operation name="getWaresNumbers">
+      <input wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getWaresNumbersRequest" message="tns:getWaresNumbers"/>
+      <output wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getWaresNumbersResponse" message="tns:getWaresNumbersResponse"/>
     </operation>
     <operation name="getNumberOfWares">
       <input wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getNumberOfWaresRequest" message="tns:getNumberOfWares"/>
       <output wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getNumberOfWaresResponse" message="tns:getNumberOfWaresResponse"/>
     </operation>
-    <operation name="getWaresNumbers">
-      <input wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getWaresNumbersRequest" message="tns:getWaresNumbers"/>
-      <output wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/getWaresNumbersResponse" message="tns:getWaresNumbersResponse"/>
+    <operation name="decreaseNumberOfWares">
+      <input wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/decreaseNumberOfWaresRequest" message="tns:decreaseNumberOfWares"/>
+      <output wsam:Action="http://service.web.whWeb.warehouse.java.neuron.hu/WareWebService/decreaseNumberOfWaresResponse" message="tns:decreaseNumberOfWaresResponse"/>
     </operation>
   </portType>
   <binding name="WareWebServiceImplPortBinding" type="tns:WareWebService">
@@ -58,7 +58,7 @@
         <soap:body use="literal"/>
       </output>
     </operation>
-    <operation name="decreaseNumberOfWares">
+    <operation name="getWaresNumbers">
       <soap:operation soapAction=""/>
       <input>
         <soap:body use="literal"/>
@@ -76,7 +76,7 @@
         <soap:body use="literal"/>
       </output>
     </operation>
-    <operation name="getWaresNumbers">
+    <operation name="decreaseNumberOfWares">
       <soap:operation soapAction=""/>
       <input>
         <soap:body use="literal"/>
@@ -88,7 +88,7 @@
   </binding>
   <service name="WareWebServiceImplService">
     <port name="WareWebServiceImplPort" binding="tns:WareWebServiceImplPortBinding">
-      <soap:address location="http://localhost:7001/warehouseApp/WareWebServiceImplService"/>
+      <soap:address location="http://javatraining.neuron.hu:80/warehouseApp/WareWebServiceImplService"/>
     </port>
   </service>
 </definitions>
