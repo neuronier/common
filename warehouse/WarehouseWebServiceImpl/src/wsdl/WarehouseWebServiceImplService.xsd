@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8-b13937 svn-revision#13942.--><xsd:schema targetNamespace="http://service.web.whWeb.warehouse.java.neuron.hu/" xmlns:ns0="http://service.web.whWeb.warehouse.java.neuron.hu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="warehouseWebVO">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="warehouseId" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="getAllWarehouseResponse">
+    <xsd:sequence>
+      <xsd:element name="return" type="ns0:warehouseWebVO" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="getAllWarehouse"/>
+  <xsd:element name="getAllWarehouseResponse" type="ns0:getAllWarehouseResponse"/>
+  <xsd:element name="getAllWarehouse" type="ns0:getAllWarehouse"/>
+</xsd:schema>
