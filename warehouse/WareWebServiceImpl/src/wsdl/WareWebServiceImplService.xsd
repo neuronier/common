@@ -9,7 +9,7 @@
   <xsd:complexType name="decreaseNumberOfWares">
     <xsd:sequence>
       <xsd:element name="arg0" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="arg1" type="xsd:long" minOccurs="0"/>
+      <xsd:element name="arg1" type="xsd:string" minOccurs="0"/>
       <xsd:element name="arg2" type="xsd:int"/>
     </xsd:sequence>
   </xsd:complexType>
@@ -47,19 +47,19 @@
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
-  <xsd:complexType name="decreaseNumberOfWaresResponse"/>
   <xsd:complexType name="getNumberOfWares">
     <xsd:sequence>
       <xsd:element name="arg0" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="arg1" type="xsd:long" minOccurs="0"/>
+      <xsd:element name="arg1" type="xsd:string" minOccurs="0"/>
     </xsd:sequence>
   </xsd:complexType>
+  <xsd:complexType name="decreaseNumberOfWaresResponse"/>
   <xsd:element name="decreaseNumberOfWares" type="ns0:decreaseNumberOfWares"/>
   <xsd:element name="getAllWaresResponse" type="ns0:getAllWaresResponse"/>
   <xsd:element name="getWaresNumbers" type="ns0:getWaresNumbers"/>
   <xsd:element name="getAllWares" type="ns0:getAllWares"/>
   <xsd:element name="getNumberOfWaresResponse" type="ns0:getNumberOfWaresResponse"/>
   <xsd:element name="getWaresNumbersResponse" type="ns0:getWaresNumbersResponse"/>
-  <xsd:element name="decreaseNumberOfWaresResponse" type="ns0:decreaseNumberOfWaresResponse"/>
   <xsd:element name="getNumberOfWares" type="ns0:getNumberOfWares"/>
+  <xsd:element name="decreaseNumberOfWaresResponse" type="ns0:decreaseNumberOfWaresResponse"/>
 </xsd:schema>
