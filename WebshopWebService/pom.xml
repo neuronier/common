@@ -2,11 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>hu.neuron.java</groupId>
-	<artifactId>webservices</artifactId>
+	<groupId>hu.neuron.ier.webshop</groupId>
+	<artifactId>webshop-webservices</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
-	<name>Spring Example</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,9 +31,8 @@
 	</build>
 
 	<modules>
-		<module>Sales Module WebServices</module>
-		<module>warehouse</module>
-		<module>WebshopWebService</module>
+		<module>WebshopClientWebservice</module>
+		
 	</modules>
 
 
